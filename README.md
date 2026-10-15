@@ -21,8 +21,6 @@ The design is mapped to relevant controls in the National Cybersecurity Authorit
 
 ## 2. Objectives
 
-The project aims to:
-
 - Limit access to information and systems according to each user's assigned duties and business needs.
 - Separate administrative responsibilities from security monitoring and independent audit activities.
 - Establish a consistent process for changing or revoking access when employment or job responsibilities change.
@@ -54,10 +52,10 @@ Access permissions should be assigned according to approved job responsibilities
 
 | Permission | Description |
 |---|---|
-| **F — Full Administrative Access** | Administrative control over the assigned system, subject to approved restrictions and logging requirements. |
-| **R/W — Read and Write** | Ability to view, create, or modify authorized operational information. |
-| **R — Read Only** | Ability to view information without changing system settings or records. |
-| **N — No Access** | No standard access is granted to the resource. |
+| **F - Full Administrative Access** | Administrative control over the assigned system, subject to approved restrictions and logging requirements. |
+| **R/W - Read and Write** | Ability to view, create, or modify authorized operational information. |
+| **R - Read Only** | Ability to view information without changing system settings or records. |
+| **N - No Access** | No standard access is granted to the resource. |
 
 Full administrative access does not automatically authorize the alteration or deletion of protected security logs. Sensitive administrative actions must remain subject to appropriate safeguards and monitoring.
 
@@ -178,13 +176,13 @@ The offboarding process begins when HR confirms that an employee's employment is
 
 ### 6.2 Process Steps
 
-**Step 1 — HR Notification**
+**Step 1: HR Notification**
 
 HR submits an offboarding request containing the employee identifier, department, manager, effective departure date, and exact departure time where applicable.
 
 The request should be available to the authorized teams and retained as evidence of the initiation of the process.
 
-**Step 2 — Identity Deactivation**
+**Step 2: Identity Deactivation**
 
 IT disables the employee's primary account at the approved departure time, or earlier when required by an authorized security decision.
 
@@ -192,25 +190,25 @@ Accounts should generally be disabled rather than immediately deleted when reten
 
 The process should also cover relevant cloud identities, email access, application accounts, and other linked identities.
 
-**Step 3 — Session and Remote Access Revocation**
+**Step 3: Session and Remote Access Revocation**
 
 The responsible teams revoke active sessions and tokens where supported by the relevant services. They also remove unnecessary VPN access, remote access permissions, SSH keys, authentication tokens, and other credentials associated with the departing employee.
 
 The team should verify that disabling the primary identity has not left independent application accounts or alternate authentication methods active.
 
-**Step 4 — Application and Privilege Review**
+**Step 4: Application and Privilege Review**
 
 IT and relevant system owners identify and remove the employee's access to business applications, privileged groups, shared resources, and third-party services.
 
 Where necessary, ownership of files, service responsibilities, and business resources is transferred to an authorized employee before the account is archived.
 
-**Step 5 — Asset Recovery and Data Handling**
+**Step 5: Asset Recovery and Data Handling**
 
 HR and IT coordinate the return of organizational devices, access badges, and other assigned assets.
 
 For personally owned devices enrolled in a BYOD arrangement, the organization should remove its organizational data using approved device-management procedures, without assuming that a full-device wipe is always appropriate.
 
-**Step 6 — Verification and Closure**
+**Step 6: Verification and Closure**
 
 The responsible teams verify that the required access has been removed and record the outcome in the offboarding ticket.
 
@@ -239,10 +237,10 @@ The following targets are proposed operational service levels for this project. 
 
 The checklist should use actual execution states, for example:
 
-- `Pending` — The action has not been completed.
-- `In Progress` — The action is being performed.
-- `Verified` — Completion has been checked and evidence recorded.
-- `Exception` — The action could not be completed and requires documented handling.
+- `Pending` - The action has not been completed.
+- `In Progress` - The action is being performed.
+- `Verified` - Completion has been checked and evidence recorded.
+- `Exception` - The action could not be completed and requires documented handling.
 
 A task should not be marked `Verified` merely because it appears in the procedure. The status must reflect the actual implementation.
 
